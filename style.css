@@ -1,7 +1,7 @@
 * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
   
   header {
@@ -43,14 +43,14 @@
     text-decoration: underline;
   }
 
-h1 {
+.h1-sobre {
     margin-left: 100px;
     margin-top: 50px;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-p {
+.p-sobre {
     margin-left: 100px;
     margin-top: 30px;
     text-align: justify;
@@ -58,13 +58,63 @@ p {
     width: 50%;
 }
 
-img {
+.img-sobre {
     margin-left: 100px;
     width: 90%;
 }
 
-body {
+.body-sobre {
     display: flex;
     flex-direction: column;
 }
 
+ #servicos {
+    padding: 60px 20px;
+    background-color: #f5f7fa;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+ }
+
+  #servicos h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+    .servicos-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+    .servico {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 25px 20px;
+    width: 280px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+    .servico:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  }
+
+    .servico h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #2980b9;
+}
+
+    .servico p {
+    font-size: 16px;
+    color: #555;
+    text-align: justify;
+}

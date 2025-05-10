@@ -5,7 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        #servicos {
+            padding: 60px 20px;
+            background-color: #f5f7fa;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+        #servicos h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .servicos-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .servico {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 25px 20px;
+            width: 280px;
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: default;
+        }
+        .servico:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        .servico h3 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            color: #2980b9;
+        }
+        .servico p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+    </style>
 </head>
+
+
 <body>
     <header>
         <div class="logo">LOGO</div>
@@ -19,13 +68,19 @@
         </nav>
     </header>
     
-     <main>
-        <h2>Serviços</h2>
-        <h3>Desenvolvimento de Software</h3>
-        <p>Criação de soluções personalizadas que atendem às necessidades do seu negócio, utilizando tecnologias modernas para garantir qualidade e eficiência.</p>
-        <h3>Consultoria em Tecnologia</h3>
-        <p>Assessoria especializada para otimizar processos, planejar estratégias tecnológicas e implementar as melhores práticas para transformação digital.</p>
-    </main>
+  <section id="servicos">
+      <h2>Serviços</h2>
+        <div class="servicos-container">
+            <article class="servico">
+                <h3>Desenvolvimento de Software</h3>
+                <p>Criação de soluções personalizadas que atendem às necessidades do seu negócio, utilizando tecnologias modernas para garantir qualidade e eficiência.</p>
+            </article>
+            <article class="servico">
+                <h3>Consultoria em Tecnologia</h3>
+                <p>Assessoria especializada para otimizar processos, planejar estratégias tecnológicas e implementar as melhores práticas para transformação digital.</p>
+            </article>
+        </div>
+    </section>
 
 </body
 

@@ -26,7 +26,7 @@
     
     <div class="form-container">
         <h2>Fale Conosco</h2>
-        <form method="post">
+        <form method="post" id="contact-form">
           <label for="nome">Nome</label>
           <input type="text" id="nome" name="nome" required>
       
@@ -40,22 +40,20 @@
         </form>
       </div>
 
-      <script>
-        document.getElementById("form-contato").addEventListener("submit", function(event) {
-          event.preventDefault(); 
-    
-          const nome = document.getElementById("nome").value.trim();
-          const email = document.getElementById("email").value.trim();
-          const mensagem = document.getElementById("mensagem").value.trim();
-    
-          if (nome && email && mensagem) {
+    <script>
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault(); 
+        const nome = document.getElementById("nome").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const mensagem = document.getElementById("mensagem").value.trim();
+        if (nome && email && mensagem) {
             alert("Mensagem enviada com sucesso!");
             this.reset(); 
-          } else {
+        } else {
             alert("Erro: preencha todos os campos.");
-          }
-        });
-      </script>
+        }
+    });
+</script>
       
 </body>
 </html>

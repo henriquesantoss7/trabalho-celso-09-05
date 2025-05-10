@@ -43,30 +43,36 @@
     text-decoration: underline;
   }
 
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
 .h1-sobre {
-    margin-left: 100px;
-    margin-top: 50px;
-    text-align: justify;
+    font-size: 32px;
+    color: #007BFF;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .p-sobre {
-    margin-left: 100px;
-    margin-top: 30px;
-    text-align: justify;
+    font-size: 16px;
+    white-space: pre-line;
     font-family: Arial, Helvetica, sans-serif;
-    width: 50%;
 }
 
 .img-sobre {
-    margin-left: 100px;
-    width: 90%;
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 2px solid #007BFF;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.body-sobre {
-    display: flex;
-    flex-direction: column;
-}
 
  #servicos {
     padding: 60px 20px;
@@ -118,3 +124,4 @@
     color: #555;
     text-align: justify;
 }
+

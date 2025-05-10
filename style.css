@@ -43,21 +43,6 @@
     text-decoration: underline;
   }
 
-  #barra {
-    display: flex;
-    background-color: #013b75;
-    width: 100%;
-    height: 600px;
-  }
-
-  #img {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 30%;
-    height: 50%;
-  }
-
 h1 {
     margin-left: 100px;
     margin-top: 50px;
